@@ -1,0 +1,1 @@
+# Boilerplates on examples directories
