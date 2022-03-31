@@ -1,7 +1,6 @@
 ## 🚀 Getting Started
 ### Requirement
 
-- Install `redis` and launch it
 - Install `mongodb` and launch it
 - Install `nodejs`
 
