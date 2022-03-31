@@ -1,5 +1,4 @@
 import { ApiPartnerType } from '@services/internal/infrastructure/file/apikey';
-import { Notification } from '@services/notifications/models';
 // IMPORT_GENERATED
 // END_GENERATED
 
@@ -7,10 +6,9 @@ import { Notification } from '@services/notifications/models';
 declare global {
   namespace Express {
     interface Request {
+      // @XXX: Example override of express
       message: string;
       partner: ApiPartnerType;
-      notifications: Notification[];
-      notification: Notification;
 
       // ADD_GENERATED_TYPE
       // END_GENERATED
@@ -22,9 +20,9 @@ declare global {
 
 // namespace Express {
 //   interface Request {
+//     // @XXX: Example override of express
+//     message: string;
 //     partner: ApiPartnerType;
-//     notifications: Notification[];
-//     notification: Notification;
 
 //     // ADD_GENERATED_TYPE
 //     // END_GENERATED
