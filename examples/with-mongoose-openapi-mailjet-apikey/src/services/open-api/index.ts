@@ -1,11 +1,11 @@
 import config from '@core/config';
 import {
-  NOTIFICATION_TAG,
+  EXAMPLE_TAG,
   // GENERATED_TAG
   // END_GENERATED
 } from '@services/open-api/constants';
-import notificationEndpoints from '@services/notifications/doc/endpoints';
-import { Notification } from '@services/notifications/doc/schemas';
+import exampleEndpoints from '@services/example/doc/endpoints';
+import { Example } from '@services/example/doc/schemas';
 // GENERATED_IMPORT
 // END_GENERATED
 
@@ -43,7 +43,7 @@ const openAPI = {
   },
   servers: getServers(),
   tags: [
-    { name: NOTIFICATION_TAG },
+    { name: EXAMPLE_TAG },
     // ADD_TAG_GENERATED
     // END_GENERATED
   ],
@@ -63,13 +63,13 @@ const openAPI = {
     },
     schemas: {
       // @TODO : Add schema to documentation
-      Notification,
+      Example,
       // GENERATED_SCHEMA
       // END_GENERATED
     },
   },
   paths: {
-    ...notificationEndpoints,
+    ...exampleEndpoints,
     // GENERATED_ENDPOINT
     // END_GENERATED
   },

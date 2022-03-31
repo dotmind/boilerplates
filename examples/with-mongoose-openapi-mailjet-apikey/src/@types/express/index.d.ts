@@ -7,6 +7,7 @@ import { Notification } from '@services/notifications/models';
 declare global {
   namespace Express {
     interface Request {
+      message: string;
       partner: ApiPartnerType;
       notifications: Notification[];
       notification: Notification;
@@ -16,4 +17,17 @@ declare global {
     }
   }
 }
+
+// @XXX: Sometimes need to declare express like below ⬇ or above ⬆
+
+// namespace Express {
+//   interface Request {
+//     partner: ApiPartnerType;
+//     notifications: Notification[];
+//     notification: Notification;
+
+//     // ADD_GENERATED_TYPE
+//     // END_GENERATED
+//   }
+// }
 /* eslint-enable */

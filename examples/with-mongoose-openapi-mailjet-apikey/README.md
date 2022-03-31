@@ -1,3 +1,7 @@
+<h1 align="center">
+  with-mongoose-openapi-mailjet-apikey
+</h1>
+
 ## 🚀 Getting Started
 ### Requirement
 
@@ -51,12 +55,9 @@ To create route documentation, you need :
   - On this file you are comment with `@TODO` to add documentation schema + endpoint + some instructions
 
 ## 🎉 Use boilerplate
-- git clone git@github.com:dotmind/boilerplate-nodejs-typescript.git myProject
-- git remote add origin1 MY_GITHUB_PROJECT
-- git branch -M main
-- git push -u origin1 main
-- git remote remove origin
-- git remote rename origin1 origin
+```shell
+npx @dotmind/create-dotmind-app MY_PROJECT_NAME --example with-mongoose-openapi-mailjet-apikey
+```
 
 ## 🔑 Api key
 - generate public / private api key : `npm run bash:generate-keys`

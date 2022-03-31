@@ -1,6 +1,6 @@
 // @flow
 
-export const NOTIFICATION_TAG = 'Notification';
+export const EXAMPLE_TAG = 'Example';
 export const OTHERS_TAG = 'Others';
 // GENERATED_TAG
 // END_GENERATED
